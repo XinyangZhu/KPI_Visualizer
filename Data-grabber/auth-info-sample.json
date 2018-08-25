@@ -1,0 +1,28 @@
+{
+	"youtube": {
+		"channel-id":"YourChannelIDHere",
+		"auth-key":"TheAuthKeyForYourChannel"
+	},
+	"facebook": {
+		"ke-username":"email", 
+		"ke-password":"password"
+	},
+	"google-sheet": {
+		"id":"sheet-id"
+	},
+	"jira": {
+		"username":"sampleuser",
+		"password":"samplepassword"
+	},
+	"google-analytics": {
+		"career-map":"",
+		"pi-stacja":"",
+		"katalyst-education":""
+	}, 
+	"sql-database": {
+		"database":"", 
+		"host":"", 
+		"username":"", 
+		"password":""
+	}
+}

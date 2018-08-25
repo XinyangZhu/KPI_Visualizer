@@ -1,0 +1,204 @@
+body {
+  background-color: #1c0b4d;
+}
+
+#backgroundImage1 {
+  position: fixed;
+  width: 100%;
+  height: 400px;
+  bottom: 0;
+  z-index: -100;
+}
+
+#backgroundImage2 {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#CM-dropdown {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#table1 {
+  display: table;
+}
+#careerMapSessionUser {
+  display: block;
+}
+#CM-no-dropdown {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#cm_logo {
+
+}
+
+#numberButton, #chartButton {
+  background-color: rgb(81, 217, 221);
+  color: rgb(24, 47, 109);
+  border: 2px solid rgb(81, 217, 221);
+  border-radius: 30px;
+  width: 162px;
+  height: 45px;
+  transition: background 0.3s ease;
+}
+
+#numberButton:hover, #chartButton:hover {
+  background-color: transparent;
+  color: rgb(81, 217, 221);
+}
+
+#startPauseButton {
+  display: none;
+  margin: 16px auto;
+  border: 2px solid #2194E0;
+  border-radius: 0.3em;
+  padding: 0.4em 2em;
+  font-size: 24px;
+  background-color: transparent;
+  color: #2194E0;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  outline: none;
+  overflow: hidden;
+  -webkit-transform: translatey(0px);
+  transform: translatey(0px);
+  -webkit-animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
+}
+#startPauseButton::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  -webkit-transform: skewX(-45deg) translateX(0);
+          transform: skewX(-45deg) translateX(0);
+  transition: none;
+}
+#startPauseButton:hover {
+  background-color: #2194E0;
+  color: #fff;
+  border-bottom: 4px solid #1977b5;
+}
+#startPauseButton:hover::before {
+  -webkit-transform: skewX(-45deg) translateX(13.5em);
+        transform: skewX(-45deg) translateX(13.5em);
+  transition: all 0.5s ease-in-out;
+}
+@-webkit-keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+.buttons {
+  top: 55%;
+  opacity: 0;
+}
+
+.updateTime {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: gray;
+  font-size: 15px;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Counter for number of Occupations */
+.job {
+  position: relative;
+  top: 35%;
+  right: 20px;
+  transform: translateY(40%) translateX(-100%);
+  font-size: 100px;
+  /* color: #E91E63; */
+  color: #333;
+  animation: slide-right 1s ease-out forwards;
+  animation-delay: 2000ms;
+}
+
+@keyframes slide-right {
+  0% { transform: translateY(40%) translateX(-100%); }
+
+  50% { transform: translateY(40%) translateX(30%); }
+
+  100% { transform: translateY(40%) translateX(5%); }
+}
+
+/* Counter for number of users */
+.users {
+  position: relative;
+  top: 35%;
+  transform: translateY(35%) translateX(100%);
+  font-size: 100px;
+  /* color: #E91E63; */
+  color: #333;
+  animation: slide-left 1s ease-out forwards;
+  animation-delay: 4000ms;
+}
+
+@keyframes slide-left {
+  0% { transform: translateY(30%) translateX(100%); }
+
+  50% { transform: translateY(30%) translateX(50%); }
+
+  100% { transform: translateY(30%) translateX(60%); }
+}
+
+#jobcount, #userNum {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 38px;
+  margin-bottom: 6px;
+  color: #E91E63;
+}
+
+.slideShow {
+  margin-top: 75px;
+}

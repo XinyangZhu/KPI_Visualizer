@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+* {box-sizing: border-box}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  /* background: rgb(209, 231, 81); */
+  /* font-family: "Monstserrat", "Avenir"; */
+  overflow: visible;
+  font-size: 100px;
+  color: white;
+}
+
+
+h1 {
+  text-align: center;
+  color: black;
+  line-height: 160px;
+  font-weight: bold;
+  font-size: 60px;
+  text-shadow: 0 1px 1px #fff;
+  position: relative;
+  top: 40%;
+}
+
+
+/* Navigation bar */
+nav.navbar, .navbar-default, .navbar-fixed-top {
+  background-color: rgb(77, 188, 233);
+  border: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: rgb(38, 173, 228);
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: white;
+  background-color: rgb(38, 173, 228);
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(38, 173, 228);
+}
+
+#activePage {
+  background-color: rgb(38, 173, 228);
+}

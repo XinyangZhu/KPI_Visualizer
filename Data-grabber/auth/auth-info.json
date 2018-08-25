@@ -1,0 +1,29 @@
+{
+	"youtube": {
+		"channel-id":"UCZDi5aTYgGoi1Snmq-uoDeA",
+		"auth-key":"AIzaSyA-qZbTVrEjXABQ8JAOuP-rEphk0x-KeB8"
+	},
+	"facebook": {
+		"ke-username":"", 
+		"ke-password":""
+	},
+	"google-sheet": {
+		"id":"19KvaY04qRaUYvk_rPWC5qHUgzdwr06Eq4b37VGuHjgY"
+	},
+	"jira": {
+		"username":"amy",
+		"password":"Amyzhang8065"
+	},
+	"google-analytics": {
+		"career-map":"133181834",
+		"pi-stacja":"117283909",
+		"katalyst-education":"118319780"
+	}, 
+	"sql-database": {
+		"database":"katalyst_pis", 
+		"host":"localhost", 
+		"username":"katalyst_pis", 
+		"password":"ZEz24#NpfUhD*MpG"
+	}
+}
+
